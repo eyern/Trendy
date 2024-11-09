@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop - Trendy Bikes Connect</title>
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body class="products-page">
+    <!--  NAV -->
+    <nav class="nav">
+      <div class="container-fluid">
+        <div class="navbar">
+          <!-- NAVBAR ICON & MENU -->
+          <div class="navbar-left">
+            <!-- NAVBAR ICON  -->
+            <a href="index.html">
+              <img src="./assets/img/logo.png" alt="Ex-UK Bikes Thika" />
+            </a>
+            <!-- NAVABR MENU -->
+            <ul class="navbar-left-menu">
+              <li class="navbar-item">
+                <a class="navbar-link active" href="index.html">Home</a>
+              </li>
+              <!-- DROPDOWN START -->
+              <li class="navbar-item dropdown">
+                <a class="navbar-link dropdown-toggle" href="products.html">
+                  Bike Categories <ion-icon class="ms-2" name="chevron-down-outline"></ion-icon>
+                </a>
+                <div class="dropdown-menu megamenu" role="menu">
+                  <div class="dropdown-content">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col">
+                          <div class="dropdown-menu-item">
+                            <h4 class="list-title">Categories</h4>
+                            <ul class="sub-menu">
+                              <li>
+                                <a href="products.html"><ion-icon name="chevron-forward-outline"></ion-icon>Kids Bikes</a>
+                              </li>
+                              <li>
+                                <a href="products.html"><ion-icon name="chevron-forward-outline"></ion-icon>Ex UK Mountain Bikes</a>
+                              </li>
+                              <li>
+                                <a href="products.html"><ion-icon name="chevron-forward-outline"></ion-icon>Road Bikes</a>
+                              </li>
+                              <li>
+                                <a href="products.html"><ion-icon name="chevron-forward-outline"></ion-icon>Safety Gear</a>
+                              </li>
+                              <li>
+                                <a href="products.html"><ion-icon name="chevron-forward-outline"></ion-icon>Accessories & Spares</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- DROPDOWN END -->
+              <li class="nav-bar-item">
+                <a class="navbar-link" href="#">About Trendy Bikes Connect</a>
+              </li>
+              <li class="nav-bar-item">
+                <a class="navbar-link" href="#">News & Offers</a>
+              </li>
+              <li class="nav-bar-item">
+                <a class="navbar-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+    <div class="mobile-menu-box" id="mobile-menu-box">
+      <a class="btn-close-menu" id="btn-close-menu">
+        <ion-icon name="close"></ion-icon>
+      </a>
+
+      <div class="mobile-menu-list">
+        <a href="index.html" class="navbar-link active">Home</a>
+        <a href="products.html" class="navbar-link">Shop</a>
+        <a href="#" class="navbar-link">About Trendy Bikes Connect</a>
+        <a href="#" class="navbar-link">News/Offers</a>
+        <a href="contact.html" class="navbar-link">Contact Us</a>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="page-banner">
+      <h1>Shop</h1>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container pb-5 mb-5">
+      <!-- BREADCRUMB -->
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Shop</li>
+      </ul>
+      <section class="content-container">
+        <div class="row">
+          <div class="col-12 col-lg-3">
+            <aside class="sidebar p-0">
+              <div class="accordion accordion-flush mt-3 mt-lg-0 mb-3">
+                <!-- Başlangıçta açık olmasını istiyorsan buton: collapsed i kaldır, div.accordion-collapse ögesine show ekle  -->
+                <!-- Başlangıçta kapalı olmasını istiyorsan buton: collapsed i ekle, div.accordion-collapse ögesine show kaldır  -->
+
+                <!-- Categories -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="categories-title">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#categories">Categories</button>
+                  </h2>
+                  <div id="categories" class="accordion-collapse collapse show" data-bs-parent="#categories-title">
+                    <div class="accordion-body">
+                      <ul class="sidebar-list">
+                        <li><a href="#">Kids Bikes</a></li>
+                        <li><a href="#">Adult Bikes</a></li>
+                        <li><a href="#">Safety Gear</a></li>
+                        <li><a href="#">Spare Parts</a></li>
+                        <li><a href="#">Road Bikes</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+
+          <div class="col-12 col-lg-9">
+            <section class="products-content">
+              <!-- FEATURED PRODUCTS TITLE  -->
+              <div class="section-title">
+                <h2 class="theme-title">New <span>Arrivals</span></h2>
+              </div>
+              <!-- FEATURED PRODUCTS   -->
+              <div class="featured-products">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-card">
+                      <div class="sale-box">Sale</div>
+                      <div class="product-card-img">
+                        <a href="product-detail.html">
+                          <img src="./assets/img/product-card/1.png" alt="Single Product Image" />
+                        </a>
+                      </div>
+                      <div class="product-card-body">
+                        <div class="product-card-body-title">
+                          <h3>Santa <strong>Cruz</strong></h3>
+                          <small>in stock</small>
+                        </div>
+                        <div class="product-card-body-size">
+                          <p>Size</p>
+                          <a href="product-detail.html" class="active">27.5"</a>
+                        </div>
+                        <button class="btn btn-orange-revert">
+                          <ion-icon name="cart-outline" class="me-3"></ion-icon>
+                          ksh 60,000
+                          <span class="old-price">ksh 80,000</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-card">
+                      <div class="sale-box">Sale</div>
+                      <div class="product-card-img">
+                        <a href="product-detail.html">
+                          <img src="./assets/img/product-card/1.png" alt="Single Product Image" />
+                        </a>
+                      </div>
+                      <div class="product-card-body">
+                        <div class="product-card-body-title">
+                          <h3>Santa  <strong>Cruz</strong></h3>
+                          <small>in stock</small>
+                        </div>
+                        <div class="product-card-body-size">
+                          <p>Size</p>
+                          <a href="product-detail.html" class="active">27.5"</a>
+                        </div>
+                        <button class="btn btn-orange-revert">
+                          <ion-icon name="cart-outline" class="me-3"></ion-icon>
+                          ksh 60,000
+                          <span class="old-price">ksh 80,000</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-card">
+                      <div class="sale-box">Sale</div>
+                      <div class="product-card-img">
+                        <a href="product-detail.html">
+                          <img src="./assets/img/product-card/1.png" alt="Single Product Image" />
+                        </a>
+                      </div>
+                      <div class="product-card-body">
+                        <div class="product-card-body-title">
+                          <h3>Santa  <strong>Cruz</strong></h3>
+                          <small>in stock</small>
+                        </div>
+                        <div class="product-card-body-size">
+                          <p>Size</p>
+                          <a href="product-detail.html" class="active">27.5"</a>
+                        </div>
+
+                        <button class="btn btn-orange-revert">
+                          <ion-icon name="cart-outline" class="me-3"></ion-icon>
+                          ksh 60,000
+                          <span class="old-price">ksh 80,000</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- BANNERS   -->
+              <div class="banners">
+                <div class="banner-box img-1 mb-3 mb-md-0">
+                  <div class="text-box">
+                    <h3 class="theme-title">Trendy Bikes Connect Black Friday <span>Deals!</span></h3>
+                    <p>Black Friday 2024 - Enjoy the Best Black Friday Sales</p>
+                  </div>
+                </div>
+              </div>
+              <!-- ORDER -->
+              <div class="main-content my-4 p-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="mb-0">Featured Products</h3>
+                  <div class="dropdown mx-2">
+                    <button class="btn btn-orange outline dropdown-toggle" type="button" id="limit" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categories
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="limit">
+                      <li><a class="dropdown-item active" href="#">Adult Bikes</a></li>
+                      <li><a class="dropdown-item" href="#">Kids Bikes</a></li>
+                      <li><a class="dropdown-item" href="#">Spare Parts</a></li>
+                      <li><a class="dropdown-item" href="#">Helmets</a></li>
+                      <li><a class="dropdown-item" href="#">Tires</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- PRODUCTS -->
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="product-card">
+                    <div class="sale-box">Sale</div>
+                    <div class="product-card-img">
+                      <a href="product-detail.html">
+                        <img src="./assets/img/product-card/1.png" alt="Single Product Image" />
+                      </a>
+                    </div>
+                    <div class="product-card-body">
+                      <div class="product-card-body-title">
+                        <h3>Santa  <strong>Cruz</strong></h3>
+                        <small>in stock</small>
+                      </div>
+                      <div class="product-card-body-size">
+                        <p>Size</p>
+                        <a href="product-detail.html" class="active">27.5"</a>
+                      </div>
+                      <button class="btn btn-orange-revert">
+                        <ion-icon name="cart-outline" class="me-3"></ion-icon>
+                        ksh 60,000
+                        <span class="old-price">ksh 80,000</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="product-card">
+                    <div class="sale-box">Sale</div>
+                    <div class="product-card-img">
+                      <a href="product-detail.html">
+                        <img src="./assets/img/product-card/1.png" alt="Single Product Image" />
+                      </a>
+                    </div>
+                    <div class="product-card-body">
+                      <div class="product-card-body-title">
+                        <h3>Santa  <strong>Cruz</strong></h3>
+                        <small>in stock</small>
+                      </div>
+                      <div class="product-card-body-size">
+                        <p>Size</p>
+                        <a href="product-detail.html" class="active">27.5"</a>
+                      </div>
+                      <button class="btn btn-orange-revert">
+                        <ion-icon name="cart-outline" class="me-3"></ion-icon>
+                        ksh 60,000
+                        <span class="old-price">ksh 80,000</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="product-card">
+                    <div class="sale-box">Sale</div>
+                    <div class="product-card-img">
+                      <a href="product-detail.html">
+                        <img src="./assets/img/product-card/1.png" alt="Single Product Image" />
+                      </a>
+                    </div>
+                    <div class="product-card-body">
+                      <div class="product-card-body-title">
+                        <h3>Santa  <strong>Cruz</strong></h3>
+                        <small>in stock</small>
+                      </div>
+                      <div class="product-card-body-size">
+                        <p>Size</p>
+                        <a href="product-detail.html" class="active">27.5"</a>
+                      </div>
+                      <button class="btn btn-orange-revert">
+                        <ion-icon name="cart-outline" class="me-3"></ion-icon>
+                        ksh 60,000
+                        <span class="old-price">ksh 80,000</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PAGINATION -->
+              <div class="row">
+                <div class="col-12">
+                  <div class="main-content pagination-box">
+                    <div class="limit-select">
+                      <span>Per Page </span>
+                      <div class="dropdown mx-2">
+                        <button
+                          class="btn btn-orange btn-sm dropdown-toggle"
+                          type="button"
+                          id="limit"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          6
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="limit">
+                          <li><a class="dropdown-item active" href="javascript:;">12</a></li>
+                          <li><a class="dropdown-item" href="javascript:;">25</a></li>
+                          <li><a class="dropdown-item" href="javascript:;">50</a></li>
+                          <li><a class="dropdown-item" href="javascript:;">100</a></li>
+                        </ul>
+                      </div>
+                      <span>number of bikes displayed.</span>
+                    </div>
+                    <div class="cs-pagination">
+                      <button class="btn btn-sm btn-outline-primary"><ion-icon name="chevron-back-outline"></ion-icon></button>
+                      <input type="text" class="cs-pagination-input" maxlength="3" value="1" />
+                      <p class="mb-0">
+                        <span>/</span>
+                        <span>120</span>
+                      </p>
+                      <button class="btn btn-sm btn-outline-primary"><ion-icon name="chevron-forward-outline"></ion-icon></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">
+            <a href="index.html" class="footer-logo">
+              <img src="./assets/img/logo-2.png" alt="Footer Logo" />
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="footer-box">
+              <h6>Trendy Bikes Connect</h6>
+              <div class="text-box get-help">
+                <a href="#">About Company</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Site Map</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="footer-box">
+              <h6>Shop Categories</h6>
+              <div class="text-box about-us">
+                <a href="#">Kids Bikes</a>
+                <a href="#">Adult Bikes</a>
+                <a href="#">Safety Gear</a>
+                <a href="#">Spare Parts</a>
+                <a href="#">Road Bikes</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="footer-box">
+              <h6>Customer Help Centre</h6>
+
+              <div class="text-box customer-service">
+                <a href="#">Terms and Conditions</a>
+                <a href="#">FAQs</a>
+                <a href="#">Delivery & Shipping</a>
+                <a href="#">After Sale Policy</a>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+        <hr class="my-4" />
+
+        <div class="footer-bottom">
+          <div class="row">
+            <div class="col-12 col-lg-3">
+              <div class="footer-bottom social-media">
+                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href=""><ion-icon name="logo-tiktok"></ion-icon></a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <p class="footer-bottom text-center my-3 my-lg-0">&copy;2024 Trendy Bikes Connect | Developed by Eyern</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS  -->
+    <script>
+      var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?99200';
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = url;
+      var options = {
+      "enabled":true,
+      "chatButtonSetting":{
+          "backgroundColor":"#0CDFED",
+          "ctaText":"Message Us",
+          "borderRadius":"25",
+          "marginLeft": "0",
+          "marginRight": "20",
+          "marginBottom": "20",
+          "ctaIconWATI":true,
+          "position":"right"
+      },
+      "brandSetting":{
+          "brandName":"Trendy Bikes Connect",
+          "brandSubTitle":"undefined",
+          "brandImg":"https://www.wati.io/wp-content/uploads/2023/04/Wati-logo.svg",
+          "welcomeText":"Hi there! 👋 \nHow can I help you?",
+          "messageText":"Hello, %0AI would like to place an order",
+          "backgroundColor":"#0CDFED",
+          "ctaText":"Message Us",
+          "borderRadius":"25",
+          "autoShow":false,
+          "phoneNumber":"254721461148"
+      }
+      };
+      s.onload = function() {
+          CreateWhatsappChatWidget(options);
+      };
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+  </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
