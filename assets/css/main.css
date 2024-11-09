@@ -593,7 +593,7 @@ a:hover {
 
 nav.nav {
     width: 100%;
-    background: #f5f5f5;
+    background: transparent;
     position: sticky;
     top: 0;
     z-index: 200
@@ -601,7 +601,7 @@ nav.nav {
 
 nav.nav .navbar {
     width: 100%;
-    background: #f5f5f5;
+    background: transparent;
     z-index: 50;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -627,7 +627,7 @@ nav.nav .navbar-left {
 }
 
 nav.nav .navbar-left img {
-    width: 50px;
+    width: 190px;
     margin-right: 30px
 }
 
