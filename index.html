@@ -287,30 +287,63 @@
         </div>
       </div>
     </section>
-
-    <!-- BANNERS  -->
-    <sections class="banners">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <a class="d-block banner-box-link" href="kids.html">
-            <div class="banner-box img-1 mb-3 mb-md-0">
-              <div class="text-box">
-                <h3 class="theme-title">Ex Uk Kids<span> Mountain Bikes</span></h3>
-              </div>
+    <section class="testimonials">
+      <div class="container">
+         <div class="row">
+            <div class="title text-center">
+               <h1>Our Clients Feedback</h1>
             </div>
-          </a>
-        </div>
-        <div class="col-12 col-md-6">
-          <a class="d-block banner-box-link" href="#">
-            <div class="banner-box img-2">
-              <div class="text-box">
-                <h3 class="theme-title">Bike <span>Accessories</span></h3>
-              </div>
+         </div>
+         <br>
+         <div class="row">
+            <div class="testimonials-content">
+               <div class="testimonials-box">
+                  <div class="testimonials-img">
+                     <div class="test-img">
+                        <img src="./assets/img/test-1.png" />
+                     </div>
+                     <div class="testimonials-text">
+                        <p>The shop offers a large variety of bicycles and accessories! Visit Trendy Bikes Connect today!</p>
+                        <h6>Mary. M</h6>
+                        <p></p>
+                     </div>
+                  </div>
+                  <div class="testimonials-img">
+                     <div class="test-img">
+                        <img src="./assets/img/test-3.png" />
+                     </div>
+                     <div class="testimonials-text">
+                        <p>First of all, excellent options they have in store! Very cooperative when you are choosing a bicycle!</p>
+                        <h6>Maurice. J</h6>
+                        <p></p>
+                     </div>
+                  </div>
+                  <div class="testimonials-img">
+                     <div class="test-img">
+                        <img src="./assets/img/test-2.png" />
+                     </div>
+                     <div class="testimonials-text">
+                        <p>Fantastic people and wide varieties of Ex Uk bikes!</p>
+                        <h6>Ann. C</h6>
+                        <p></p>
+                     </div>
+                  </div>
+                  <div class="testimonials-img">
+                    <div class="test-img">
+                       <img src="./assets/img/test-4.png" />
+                    </div>
+                    <div class="testimonials-text">
+                       <p>The shop owner is kind and helpful. I recommend Trendy Bikes Connect!</p>
+                       <h6>Eyern. K</h6>
+                       <p></p>
+                    </div>
+                 </div>
+               </div>
+               <div class="slider"></div>
             </div>
-          </a>
-        </div>
+         </div>
       </div>
-    </sections>
+   </section>
 
     <!-- SALE PRODUCT -->
     <section class="sale-products mt-4">
@@ -516,6 +549,29 @@
       </div>
     </section>
 
+    <!-- BANNERS  -->
+    <sections class="banners">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <a class="d-block banner-box-link" href="kids.html">
+            <div class="banner-box img-1 mb-3 mb-md-0">
+              <div class="text-box">
+                <h3 class="theme-title">Follow Trendy Bikes Connect on Instagram</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6">
+          <a class="d-block banner-box-link" href="#">
+            <div class="banner-box img-2">
+              <div class="text-box">
+                <h3 class="theme-title">Bike Spares</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </sections>
     
   </main>
 
@@ -586,6 +642,95 @@
   </footer>
 
   <!-- SCRIPTS  -->
+  <script>
+    // Testimonials Slider
+
+const sliderContainer = document.querySelector(".testimonials-box");
+const slider = sliderContainer.children;
+const containerWidth = sliderContainer.offsetWidth;
+
+const margin = 30;
+let itemPerSlide = 0;
+let sliderDot;
+
+const responsive = [{
+    breakPoint: {
+      width: 0,
+      item: 1,
+    },
+  },
+  {
+    breakPoint: {
+      width: 991,
+      item: 2,
+    },
+  },
+];
+
+function load() {
+  for (let i = 0; i < responsive.length; i++) {
+    if (window.innerWidth > responsive[i].breakPoint.width) {
+      itemPerSlide = responsive[i].breakPoint.item;
+    }
+  }
+  start();
+}
+
+function start() {
+  totalWidth = 0;
+  for (let i = 0; i < slider.length; i++) {
+    slider[i].style.width = containerWidth / itemPerSlide - margin + "px";
+    slider[i].style.margin = margin / 2 + "px";
+    totalWidth += containerWidth / itemPerSlide;
+  }
+  sliderContainer.style.width = totalWidth + "px";
+
+  sliderDot = Math.ceil(slider.length / itemPerSlide);
+
+  for (let i = 0; i < sliderDot; i++) {
+    const div = document.createElement("div");
+    div.id = i;
+    div.setAttribute("onclick", "controlSlide(this)");
+    if (i == 0) {
+      div.classList.add("active");
+    }
+    document.querySelector(".slider").appendChild(div);
+  }
+}
+
+let currentSlide = 0;
+let autoSlide = 0;
+
+function controlSlide(element) {
+  clearInterval(timer);
+  timer = setInterval(autoPlay, 5000);
+  autoSlide = element.id;
+  currentSlide = element.id;
+  changeSlide(currentSlide);
+}
+
+function changeSlide(currentSlide) {
+  controlButton = document.querySelector(".slider").children;
+  for (let i = 0; i < controlButton.length; i++) {
+    controlButton[i].classList.remove("active");
+  }
+  controlButton[currentSlide].classList.add("active");
+
+  sliderContainer.style.marginLeft = -(containerWidth * currentSlide) + "px";
+}
+
+function autoPlay() {
+  if (autoSlide == sliderDot - 1) {
+    autoSlide = 0;
+  } else {
+    autoSlide++;
+  }
+  changeSlide(autoSlide);
+}
+let timer = setInterval(autoPlay, 5000);
+
+window.onload = load();
+  </script>
   <script>
     var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?99200';
     var s = document.createElement('script');
