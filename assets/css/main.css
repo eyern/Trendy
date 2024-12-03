@@ -305,106 +305,6 @@ a:hover {
     color: #269400
 }
 
-.pagination-box {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column
-}
-
-@media (min-width: 768px) {
-    .pagination-box {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row
-    }
-}
-
-.pagination-box .limit-select {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    color: #afafaf;
-    font-size: 12px;
-    margin-bottom: 20px
-}
-
-@media (min-width: 768px) {
-    .pagination-box .limit-select {
-        font-size: 14px;
-        margin-bottom: 0
-    }
-}
-
-.pagination-box .cs-pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row
-}
-
-.pagination-box .cs-pagination>* {
-    margin-right: 8px
-}
-
-.pagination-box .cs-pagination>*:last-child {
-    margin-right: 0
-}
-
-.pagination-box .cs-pagination .btn {
-    height: 31px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    font-size: 13px;
-    border-color: #0CDFED;
-    color: #0CDFED !important
-}
-
-.pagination-box .cs-pagination .btn:hover {
-    background: #0CDFED;
-    color: #fcfcfc !important;
-    box-shadow: 0 0px 6px #0CDFEDab !important
-}
-
-.pagination-box .cs-pagination p span {
-    color: #afafaf
-}
-
-.pagination-box .cs-pagination p span:first-child {
-    margin-right: 8px
-}
-
-.pagination-box .cs-pagination-input {
-    color: #afafaf;
-    width: 40px;
-    border: 1px solid #afafaf;
-    border-radius: 6px;
-    padding: 0.25rem 0.5rem;
-    font-size: 13px;
-    text-align: center;
-    transition: all 0.3s
-}
-
-.pagination-box .cs-pagination-input:focus,
-.pagination-box .cs-pagination-input:active,
-.pagination-box .cs-pagination-input:hover {
-    border-color: #0CDFED;
-    color: #0CDFED
-}
-
-.pagination-box .dropdown-item.active {
-    background: #0CDFED !important
-}
-
-.pagination-box .dropdown-item:hover {
-    background: #0CDFED1c
-}
-
 .banners .banner-box {
     display: flex;
     justify-content: center;
@@ -2687,6 +2587,7 @@ outline: none;
 color: #0CDFED;
 font-weight: 500;
 }
+
 
 
   
