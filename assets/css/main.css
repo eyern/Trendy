@@ -337,12 +337,13 @@ a:hover {
 }
 
 .banners .banner-box.img-1 {
-    background-image: url(../../assets/img/home-page/banner-man.png)
+    background-image: url(../../assets/img/home-page/stock-3.jpg)
 }
 
 .banners .banner-box.img-2 {
-    background-image: url(../../assets/img/home-page/banner-woman.png)
+    background-image: url(../../assets/img/home-page/stock-1.jpg)
 }
+
 
 .banners .banner-box::before {
     content: "";
@@ -360,6 +361,8 @@ a:hover {
 .banners .banner-box.img-2::before {
     background: linear-gradient(109.52deg, rgba(72, 100, 230, 0.7) 2.51%, rgba(129, 151, 254, 0.26) 76.45%)
 }
+
+
 
 .breadcrumb-container {
     width: 100%;
