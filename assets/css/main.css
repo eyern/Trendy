@@ -56,7 +56,7 @@ a {
 }
 
 a:hover {
-    color: #0CDFED
+    color: #CC9933
 }
 
 .btn {
@@ -70,21 +70,21 @@ a:hover {
 }
 
 .btn-orange:hover {
-    background: #0CDFED;
-    box-shadow: 0 0px 11px #0CDFEDab !important;
+    background: #CC9933;
+    box-shadow: 0 0px 11px #CC9933ab !important;
     color: #fcfcfc
 }
 
 .btn-orange.outline {
     background: transparent;
-    color: #0CDFED;
-    border: 1px solid #0CDFED
+    color: #CC9933;
+    border: 1px solid #CC9933
 }
 
 .btn-orange.outline:hover {
-    background: #0CDFED;
+    background: #CC9933;
     color: #fcfcfc;
-    box-shadow: 0 0px 11px #0CDFEDab !important
+    box-shadow: 0 0px 11px #CC9933ab !important
 }
 
 .btn-favorite {
@@ -106,11 +106,11 @@ a:hover {
 .btn-white {
     transition: all 0.3s;
     background: #fcfcfc;
-    color: #0CDFED
+    color: #CC9933
 }
 
 .btn-white:hover {
-    background: #0CDFED;
+    background: #CC9933;
     color: #fcfcfc;
     box-shadow: 0 0px 11px #ff2727ab !important
 }
@@ -215,7 +215,7 @@ a:hover {
 
 .main-content .form-control:hover,
 .main-content .form-control:focus {
-    border-color: #0CDFED
+    border-color: #CC9933
 }
 
 .subtitle {
@@ -240,13 +240,13 @@ a:hover {
 }
 
 .floating-form .form-control:hover {
-    border-color: #0CDFED
+    border-color: #CC9933
 }
 
 .floating-form .form-control:focus,
 .floating-form .form-control:active,
 .floating-form .form-control:valid {
-    border-color: #0CDFED
+    border-color: #CC9933
 }
 
 .floating-form .form-control:focus+label,
@@ -256,7 +256,7 @@ a:hover {
     top: -2px !important;
     z-index: 100;
     font-size: 12px;
-    color: #0CDFED
+    color: #CC9933
 }
 
 .floating-form label {
@@ -286,8 +286,8 @@ a:hover {
 }
 
 .badge-orange {
-    background: #0CDFED1c;
-    color: #0CDFED
+    background: #CC99331c;
+    color: #CC9933
 }
 
 .badge-red {
@@ -355,7 +355,7 @@ a:hover {
 }
 
 .banners .banner-box.img-1::before {
-    background: linear-gradient(109.6deg, #0CDFED 1.42%, rgba(255, 103, 0, 0.26) 62.22%)
+    background: linear-gradient(109.6deg, #CC9933 1.42%, rgba(255, 103, 0, 0.26) 62.22%)
 }
 
 .banners .banner-box.img-2::before {
@@ -427,15 +427,15 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    background: #0CDFED1c;
+    background: #CC99331c;
     color: #062729;
     transition: all 0.3s
 }
 
 .btn-orange-revert:hover {
-    background: #0CDFED;
+    background: #CC9933;
     color: #fff;
-    box-shadow: 0 0px 11px #0CDFED !important
+    box-shadow: 0 0px 11px #CC9933 !important
 }
 
 .btn-orange-revert:hover .old-price {
@@ -823,7 +823,7 @@ a:hover {
 
 .product-card-body-size a:hover,
 .product-card-body-size a.active {
-    color: #0CDFED
+    color: #CC9933
 }
 
 .product-card-body-color .color-select {
@@ -896,7 +896,7 @@ a:hover {
 
 .home-banner-left h1 {
     font-weight: 2000;
-    color: #0CDFED;
+    color: #CC9933;
     font-size: 49px;
     text-align: center
 }
@@ -1043,7 +1043,7 @@ a:hover {
 
 .home-banner-right .size-select .size-list a:hover,
 .home-banner-right .size-select .size-list a.checked {
-    color: #0CDFED
+    color: #CC9933
 }
 
 .home-banner-right .size-select .btn-white {
@@ -1244,11 +1244,11 @@ a:hover {
 }
 
 .products-page .main-content .dropdown-item.active {
-    background: #0CDFED !important
+    background: #CC9933 !important
 }
 
 .products-page .main-content .dropdown-item:hover {
-    background: #0CDFED1c
+    background: #CC99331c
 }
 
 .products-page .sidebar .accordion-item {
@@ -1267,12 +1267,12 @@ a:hover {
 }
 
 .products-page .sidebar .accordion-button:hover {
-    color: #0CDFED
+    color: #CC9933
 }
 
 .products-page .sidebar .accordion-button:not(.collapsed) {
-    background: #0CDFED1c;
-    color: #0CDFED;
+    background: #CC99331c;
+    color: #CC9933;
     border-radius: 6px;
     border-color: transparent
 }
@@ -1306,8 +1306,8 @@ a:hover {
 }
 
 .products-page .sidebar .accordion-body .form-check-input:checked {
-    background-color: #0CDFED;
-    border-color: #0CDFED
+    background-color: #CC9933;
+    border-color: #CC9933
 }
 
 .products-page .sidebar .accordion-body.size-boxes .form-check-label {
@@ -1318,7 +1318,7 @@ a:hover {
 
 .products-page .sidebar .accordion-body.size-boxes .form-check-label:hover,
 .products-page .sidebar .accordion-body.size-boxes .form-check-label .form-check-input:checked+span {
-    color: #0CDFED
+    color: #CC9933
 }
 
 .products-page .sidebar .banner-image {
@@ -1450,7 +1450,7 @@ a:hover {
 
 .products-detail-page .product-details-header .star-box .stars>* {
     font-size: 18.66px;
-    color: #0CDFED
+    color: #CC9933
 }
 
 .products-detail-page .product-details-title p {
@@ -1481,7 +1481,7 @@ a:hover {
 }
 
 .products-detail-page .product-details-price .new-price {
-    color: #0CDFED;
+    color: #CC9933;
     font-size: 24.88px;
     line-height: 37.32px;
     margin-right: 15px
@@ -1519,12 +1519,12 @@ a:hover {
 }
 
 .products-detail-page .product-details-size>div a:not(.disabled):hover {
-    color: #0CDFED;
+    color: #CC9933;
     cursor: pointer
 }
 
 .products-detail-page .product-details-size>div a.active {
-    color: #0CDFED;
+    color: #CC9933;
     font-weight: 500
 }
 
@@ -1655,7 +1655,7 @@ a:hover {
 }
 
 .products-detail-page .tab-content .comment-box .stars {
-    color: #0CDFED
+    color: #CC9933
 }
 
 .products-detail-page .tab-content .comment-box h6 {
@@ -1773,7 +1773,7 @@ a:hover {
 }
 
 .cargo-page .main-content .cargo-steps-box.complated .icon-box {
-    background: #0CDFED;
+    background: #CC9933;
     color: #fcfcfc
 }
 
@@ -1811,7 +1811,7 @@ a:hover {
 
 @media (min-width: 768px) {
     .cargo-page .main-content .cargo-steps .cs-progress-bar {
-        background: #0CDFED;
+        background: #CC9933;
         height: 5px;
         position: absolute;
         left: 0;
@@ -1961,7 +1961,7 @@ a:hover {
 }
 
 .blog-detail-page .share-social a:hover {
-    color: #0CDFED !important
+    color: #CC9933 !important
 }
 
 .blog-detail-page hr {
@@ -2067,10 +2067,10 @@ a:hover {
     width: 64px;
     min-width: 64px;
     height: 64px;
-    background: #0CDFED1c;
+    background: #CC99331c;
     font-size: 33.16px;
     border-radius: 100%;
-    color: #0CDFED;
+    color: #CC9933;
     margin-right: 10px;
     display: flex;
     justify-content: center;
@@ -2237,7 +2237,7 @@ a:hover {
     height: 2px;
     bottom: -6px;
     left: 0;
-    background-color: #0CDFED;
+    background-color: #CC9933;
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -2269,8 +2269,8 @@ a:hover {
   .navbar .getstarted:hover,
   .navbar .getstarted:focus:hover {
     color: #fff;
-    background: #0CDFED;
-    border-color: #0CDFED;
+    background: #CC9933;
+    border-color: #CC9933;
   }
   
   .navbar>ul>li>.getstarted:before {
@@ -2312,7 +2312,7 @@ a:hover {
   .navbar .dropdown ul a:hover,
   .navbar .dropdown ul .active:hover,
   .navbar .dropdown ul li:hover>a {
-    color: #0CDFED;
+    color: #CC9933;
   }
   
   .navbar .dropdown:hover>ul {
@@ -2408,7 +2408,7 @@ a:hover {
   .navbar-mobile a:hover,
   .navbar-mobile .active,
   .navbar-mobile li:hover>a {
-    color: #0CDFED;
+    color: #CC9933;
   }
   
   .navbar-mobile .getstarted,
@@ -2510,8 +2510,8 @@ a:hover {
     border-radius: 4px;
     transition: 0.5s;
     color: #fff;
-    background: #0CDFED;
-    border: 2px solid #0CDFED;
+    background: #CC9933;
+    border: 2px solid #CC9933;
   }
   
   #hero .btn-get-started:hover {
@@ -2571,7 +2571,7 @@ justify-content: space-between;
 {
 letter-spacing: 3px;
 display: inline-block;
-border-bottom: 2px solid #0CDFED;
+border-bottom: 2px solid #CC9933;
 padding-bottom: 10px;
 }
 .search input
@@ -2587,7 +2587,7 @@ outline: none;
 }
  .search input::placeholder
 {
-color: #0CDFED;
+color: #CC9933;
 font-weight: 500;
 }
 
@@ -2614,7 +2614,7 @@ font-weight: 500;
 .testimonials-img {
     background-color: #fff;
     margin-bottom: 15px;
-    border: 1px solid #0CDFED;
+    border: 1px solid #CC9933;
     padding: 40px 20px;
     border-radius: 4px;
     display: flex;
@@ -2658,7 +2658,7 @@ font-weight: 500;
 .slider div {
     height: 15px;
     width: 15px;
-    background-color: #0CDFED;
+    background-color: #CC9933;
     border: 1px solid #000;
     border-radius: 50%;
     display: inline-block;
