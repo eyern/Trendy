@@ -399,7 +399,15 @@ a:hover {
 
 .sale-box {
     padding: 6px 12px;
-    background: #121212;
+    background: #CC9933;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: 600
+}
+
+.sold-box {
+    padding: 6px 12px;
+    background: #FF0000;
     color: #fff;
     border-radius: 6px;
     font-weight: 600
@@ -756,6 +764,13 @@ a:hover {
 }
 
 .product-card .sale-box {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 100
+}
+
+.product-card .sold-box {
     position: absolute;
     top: 25px;
     left: 25px;
@@ -1240,6 +1255,10 @@ a:hover {
 }
 
 .products-page .product-card .sale-box {
+    left: 15px
+}
+
+.products-page .product-card .sold-box {
     left: 15px
 }
 
@@ -2453,7 +2472,8 @@ a:hover {
   /*--------------------------------------------------------------
   # Hero Section
   --------------------------------------------------------------*/
-  #hero {
+/* :: 5.0 Hero Slides Area */
+#hero {
     width: 100%;
     height: 100vh;
     background: url(../../assets/img/home.jpg) top center;
@@ -2484,7 +2504,6 @@ a:hover {
     flex-direction: column;
     text-align: center;
   }
-  
   #hero h1 {
     margin: 0 0 10px 0;
     font-size: 48px;
@@ -2517,38 +2536,37 @@ a:hover {
   #hero .btn-get-started:hover {
     border-color: #fff;
     background: rgba(255, 255, 255, 0.1);
-  }
+}
   
-  #hero .btn-watch-video {
-    font-size: 16px;
-    display: inline-block;
-    transition: 0.5s;
-    margin-left: 25px;
-    color: #fff;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+#hero .btn-watch-video {
+  font-size: 16px;
+  display: inline-block;
+  transition: 0.5s;
+  margin-left: 25px;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero .btn-watch-video i {
+  line-height: 0;
+  color: #fff;
+  font-size: 32px;
+  transition: 0.3s;
+  margin-right: 8px;
+}
+
+#hero .btn-watch-video:hover i {
+  color: #ff4a17;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
   }
-  
-  #hero .btn-watch-video i {
-    line-height: 0;
-    color: #fff;
-    font-size: 32px;
-    transition: 0.3s;
-    margin-right: 8px;
-  }
-  
-  #hero .btn-watch-video:hover i {
-    color: #ff4a17;
-  }
-  
-  @media (min-width: 1024px) {
-    #hero {
-      background-attachment: fixed;
-    }
-  }
-  
-  @media (max-width: 768px) {
+}
+@media (max-width: 768px) {
     #hero h1 {
       font-size: 28px;
       line-height: 36px;
@@ -2614,7 +2632,7 @@ font-weight: 500;
 .testimonials-img {
     background-color: #fff;
     margin-bottom: 15px;
-    border: 1px solid #CC9933;
+    border: 1px solid #fff;
     padding: 40px 20px;
     border-radius: 4px;
     display: flex;
@@ -2670,6 +2688,75 @@ font-weight: 500;
     background-color: #fff;
 
 }
+
+hr {
+    margin: 20px 0px;
+  }
+  
+  .google-button {
+    display: block;
+    margin: 15px auto;
+    width: 70%;
+    max-width: 270px;
+    padding: 10px 10px 10px 50px;
+    border: 2px solid #00a0dc;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    line-height: 20px;
+    color: #00a0dc;
+    background: url(https://cdn2.hubspot.net/hubfs/1961464/Support%20images/new-google-favicon-512.png) no-repeat left 20px center / 40px 40px;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+      -webkit-animation: wiggle 2s ease-in infinite;
+      -moz-animation: wiggle 2s ease-in infinite;
+      -o-animation: wiggle 2s ease-in infinite;
+    animation: wiggle 2s ease-in infinite;
+  }
+  
+    .google-button:hover {
+      color: #ffffff;
+      background-color: #00a0dc;
+      background-image: url(https://cdn2.hubspot.net/hubfs/1961464/Support%20images/new-google-favicon-512-white.png);
+  }
+  
+    .google-button strong {
+      font-size: 18px;
+      display: block;
+    }
+  
+  
+  @-webkit-keyframes wiggle {
+    0%, 20%, 100% { background-position: left 20px center; }
+    5% { background-position: left 15px center; }
+    10% { background-position: left 20px center; }
+    15% { background-position: left 25px center; }
+  }
+  
+  @-moz-keyframes wiggle {
+    0%, 20%, 100% { background-position: left 20px center; }
+    5% { background-position: left 15px center; }
+    10% { background-position: left 20px center; }
+    15% { background-position: left 25px center; }
+  }
+  
+  @-o-keyframes wiggle {
+    0%, 20%, 100% { background-position: left 20px center; }
+    5% { background-position: left 15px center; }
+    10% { background-position: left 20px center; }
+    15% { background-position: left 25px center; }
+  }
+  
+  @keyframes wiggle {
+    0%, 20%, 100% { background-position: left 20px center; }
+    5% { background-position: left 15px center; }
+    10% { background-position: left 20px center; }
+    15% { background-position: left 25px center; }
+  }
 
 
 
